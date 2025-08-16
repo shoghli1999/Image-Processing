@@ -2,7 +2,7 @@
 
 ## 📚 Bachelor Course Project
 
-This project was developed as part of my **Bachelor's degree coursework** in Computer Science/Engineering, focusing on **Digital Image Processing**. The project demonstrates and compares five fundamental edge detection algorithms commonly used in computer vision and image analysis.
+This project was developed as part of my **Bachelor's degree coursework** in Computer Engineering, focusing on **Digital Image Processing**. The project demonstrates and compares five fundamental edge detection algorithms commonly used in computer vision and image analysis.
 
 ## 🎯 Project Overview
 
