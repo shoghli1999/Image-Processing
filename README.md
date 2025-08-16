@@ -204,13 +204,3 @@ This is an academic project, but suggestions and improvements are welcome! Feel 
 ## 📄 License
 
 This project is part of academic coursework and is provided for educational purposes.
-
-## 👨‍🎓 Author
-
-**Student Name**  
-Bachelor's Degree in Computer Science/Engineering  
-Digital Image Processing Course Project
-
----
-
-*This project demonstrates fundamental concepts in digital image processing and computer vision, providing both theoretical understanding and practical implementation of edge detection algorithms.*
