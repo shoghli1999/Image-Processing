@@ -66,7 +66,7 @@ Image-Processing-main/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Image-Processing-main.git
+   git clone https://github.com/shoghli1999/Image-Processing-main.git
    cd Image-Processing-main
    ```
 
