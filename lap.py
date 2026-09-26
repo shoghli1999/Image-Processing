@@ -1,9 +1,13 @@
+import sys
+
 import cv2
 import numpy as np
 #define the lap filter
 lap_filter = [[0,1,0], [1,-4,1], [0,1,0]]
 #read the image
-img = cv2.imread(r'C:\Users\MOSALAS\Pictures\elephant.jpg')
+if len(sys.argv) < 2:
+    sys.exit('usage: python lap.py <image file>')
+img = cv2.imread(sys.argv[1])
 #get the dimensions of the image
 n,m,d = img.shape
 #initialize the edges image
@@ -19,4 +23,4 @@ for row in range(3, n-2):
         lap_score = (lap_transformed_pixels.sum()**2)**0.5
         edges_img[row, col] = [lap_score]
 cv2.imshow('lap',edges_img)
-cv2.waitkey(0)
+cv2.waitKey(0)

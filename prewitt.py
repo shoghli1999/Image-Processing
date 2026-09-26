@@ -1,3 +1,5 @@
+import sys
+
 import cv2
 import numpy as np
 #define the vertical filter
@@ -5,7 +7,9 @@ vertical_filter = [[-1,-1,-1], [0,0,0], [1,1,1]]
 #define the horizontal filter
 horizontal_filter = [[-1,0,1], [-1,0,1], [-1,0,1]]
 #read image
-img = cv2.imread(r'C:\Users\MOSALAS\Pictures\elephant.jpg')
+if len(sys.argv) < 2:
+    sys.exit('usage: python prewitt.py <image file>')
+img = cv2.imread(sys.argv[1])
 #get the dimensions of the image
 n,m,d = img.shape
 #initialize the edges image
@@ -28,4 +32,4 @@ for row in range(3, n-2):
         #insert this edge score into the edges image
         edges_img[row, col] = [edge_score]
 cv2.imshow('prewitt',edges_img)
-cv2.waitkey(0)
+cv2.waitKey(0)

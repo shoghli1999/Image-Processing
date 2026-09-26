@@ -1,3 +1,5 @@
+import sys
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -264,16 +266,8 @@ def main():
     print("Image Processing Edge Detection Comparison")
     print("="*50)
     
-    # Try to use the original image path from the existing files
-    original_path = r'C:\Users\MOSALAS\Pictures\elephant.jpg'
-    
-    # Ask user for image path or use default
-    user_path = input(f"Enter image path (or press Enter to use default: {original_path}): ").strip()
-    
-    if user_path:
-        image_path = user_path
-    else:
-        image_path = original_path
+    # Take the image path from the command line, or ask for it
+    image_path = sys.argv[1] if len(sys.argv) > 1 else input("Enter image path: ").strip()
     
     # Run the comparison
     compare_edge_detection_methods(image_path)
